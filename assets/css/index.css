@@ -5,22 +5,26 @@ body {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding: 10px;
+    padding: 1rem;
 }
 
 h3 {
     font-weight: lighter;
 }
 
-.container {
-    display: flex;
-}
-
 ul {
     list-style-type: none
 }
 
+.container {
+    display: flex;
+}
+
 /* ===================================HEADER=================================== */
+
+.header_justify {
+    justify-content: space-between;
+}
 
 .navbar_li {
     display: block;
@@ -28,15 +32,19 @@ ul {
     padding: 10px 10px;
 }
 
-/* ===================================A PROPOS===================================*/
+/* ===================================A PROPOS=================================== */
 
 .about_container {
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 
 .about_presentation {
-    width: 100%;
+    max-width: 100%;
+}
+
+.about_cont_picture {
+    max-width: 100%;
 }
 
 .about_picture {
@@ -51,14 +59,21 @@ ul {
     font-size: 1.8em;
 }
 
-/* ===================================COMPETENCES===================================*/
+/* ===================================COMPETENCES=================================== */
 
 .skills_h2 {
     text-align: center;
 }
 
+.skills_icons {
+    justify-content: space-around;
+}
 
-/* ===================================PROJETS===================================*/
+.skills_icons i {
+    font-size: 5rem;
+}
+
+/* ===================================PROJETS=================================== */
 
 .proj_h2 {
     text-align: center;
@@ -95,7 +110,7 @@ ul {
     width: 100%;
 }
 
-/* ===================================CONTACT===================================*/
+/* ===================================CONTACT=================================== */
 
 .contact_h2 {
     text-align: center;
@@ -109,7 +124,7 @@ ul {
     width: 100%;
 }
 
-/* ===================================FOOTER===================================*/
+/* ===================================FOOTER=================================== */
 
 .container_p {
     display: flex;

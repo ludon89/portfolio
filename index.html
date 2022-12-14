@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!--Bootstrap-->
+            <!--Bootstrap-->
     <link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css">
+            <!-- FontAwesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+            <!-- CSS -->
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans">
     <title>Portfolio Lucas Daudon</title>
@@ -15,19 +18,24 @@
 
 <body>
     <header>
-        <div class="container">
-            <div> <!-- image logo -->
-                <img src="assets/img/logo.jpg">
+        <div class="container header_justify">
+            <div class="container"> <!-- logos -->
+                <div> <!-- image logo -->
+                    <img src="assets/img/logo.jpg">
+                </div>
+                <h1>LuDon89</h1>
+            </div> <!-- nav -->
+                <div>
+                    <nav>
+                        <ul class="container">
+                            <li class="navbar_li">À propos de moi</li>
+                            <li class="navbar_li">Mes Projets</li>
+                            <li class="navbar_li">Mes Compétences</li>
+                            <li class="navbar_li">Me Contacter</li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <h1>LuDon89</h1>
-            <nav>
-                <ul class="container">
-                    <li class="navbar_li">À propos de moi</li>
-                    <li class="navbar_li">Mes Projets</li>
-                    <li class="navbar_li">Mes Compétences</li>
-                    <li class="navbar_li">Me Contacter</li>
-                </ul>
-            </nav>
         </div>
     </header>
     <hr>
@@ -38,8 +46,8 @@
                     <h2 class="about_name">Lucas Daudon</h2>
                     <h3 class="about_profession">Développeur web</h3>
                 </div>
-                <div class="about_picture">
-                    <img src="assets/img/ihavenoideawhatimdoing.jpg">
+                <div class="about_cont_picture">
+                    <img src="assets/img/ihavenoideawhatimdoing.jpg" class="about_picture">
                 </div>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem explicabo, dicta placeat quaerat earum quasi molestiae voluptatum, exercitationem eveniet qui omnis, porro ducimus aut modi illum inventore in sapiente natus!</p>
@@ -47,22 +55,22 @@
         <hr>
         <section> <!-- mes compétences -->
             <h2 class="skills_h2">Mes Compétences</h2>
-            <h3 class="skills_h3">En cours d'acquisition</h3>
+            <h3 class="skills_h3">En cours d'acquisition :</h3>
             <div> <!-- icônes en cours d'acq -->
-                <div class="container">
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>JS</p>
-                    <p>BS</p>
-                </div>
+                <ul class="container skills_icons">
+                    <li><i class="fa-brands fa-html5"></i></li>
+                    <li><i class="fa-brands fa-css3-alt"></i></li>
+                    <li><i class="fa-brands fa-square-js"></i></p>
+                    <li><i class="fa-brands fa-bootstrap"></i></li>
+                </ul>
             </div>
-            <h3>À venir</h3>
+            <h3>À venir :</h3>
             <div> <!-- icônes à venir -->
-                <div class="container">
-                    <p>php</p>
-                    <p>React</p>
-                    <p>SQL</p>
-                </div>
+                <ul class="container skills_icons">
+                    <li><i class="fa-brands fa-php"></i></li>
+                    <li><i class="fa-brands fa-react"></i></li>
+                    <li><i class="fa-brands fa-laravel"></i></li>
+                </ul>
             </div>
         </section>
         <hr>
@@ -97,9 +105,9 @@
                 </div>
 				<div class="contact_socials"> <!-- réseaux -->
 					<ul>
-                        <li>Mail bidon</li>
-						<li>LinkedIn</li>
-						<li>GitHub</li>
+                        <li><i class="fa-solid fa-envelope"></i> Mail bidon</li>
+						<li><i class="fa-brands fa-linkedin"></i></li>
+						<li><i class="fa-brands fa-github"></i></li>
 					</ul>
 				</div>
 			</div>
