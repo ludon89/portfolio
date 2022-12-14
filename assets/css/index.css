@@ -1,0 +1,123 @@
+body {
+    font-family: "Fira Sans", "Helvetica Neue", Arial, sans-serif;
+    background-color: #1b1a17;
+    color: white;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+h3 {
+    font-weight: lighter;
+}
+
+.container {
+    display: flex;
+}
+
+ul {
+    list-style-type: none
+}
+
+/* ===================================HEADER=================================== */
+
+.navbar_li {
+    display: block;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+/* ===================================A PROPOS===================================*/
+
+.about_container {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about_presentation {
+    width: 100%;
+}
+
+.about_picture {
+    width: 100%;
+}
+
+.about_name {
+    font-size: 2.2em;
+}
+
+.about_profession {
+    font-size: 1.8em;
+}
+
+/* ===================================COMPETENCES===================================*/
+
+.skills_h2 {
+    text-align: center;
+}
+
+
+/* ===================================PROJETS===================================*/
+
+.proj_h2 {
+    text-align: center;
+}
+
+.proj_container {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.proj_illus1 {
+    width: 100%;
+}
+
+.proj_illus2 {
+    width: 100%;
+}
+
+.proj_img1 {
+    object-fit: contain;
+    max-width: 500px;
+}
+
+.proj_img2 {
+    object-fit: contain;
+    max-width: 500px;
+}
+
+.desc_proj1 {
+    width: 100%;
+}
+
+.desc_proj2 {
+    width: 100%;
+}
+
+/* ===================================CONTACT===================================*/
+
+.contact_h2 {
+    text-align: center;
+}
+
+.contact_message {
+    width: 100%;
+}
+
+.contact_socials {
+    width: 100%;
+}
+
+/* ===================================FOOTER===================================*/
+
+.container_p {
+    display: flex;
+    justify-content: right;
+}
+
+.footer_p {
+    font-size: xx-small;
+    text-align: right;
+    max-width: 400px;
+}
