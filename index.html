@@ -10,31 +10,33 @@
     <link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css">
             <!-- FontAwesome -->
     <link rel="stylesheet" href="assets/css/all.min.css">
+            <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
             <!-- CSS -->
     <link rel="stylesheet" href="assets/css/index.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans">
     <title>Portfolio Lucas Daudon</title>
 </head>
 
 <body>
     <header>
-        <div class="container header_justify">
-            <div class="container"> <!-- logos -->
-                <div> <!-- image logo -->
+        <div class="container header_container">
+            <div class="container header_container"> <!-- logos -->
+                <div class="header_logoimage"> <!-- logo image -->
                     <img src="assets/img/logo.jpg">
                 </div>
-                <h1>LuDon89</h1>
-            </div> <!-- nav -->
-                <div>
-                    <nav>
-                        <ul class="container">
-                            <li class="navbar_li">À propos de moi</li>
-                            <li class="navbar_li">Mes Projets</li>
-                            <li class="navbar_li">Mes Compétences</li>
-                            <li class="navbar_li">Me Contacter</li>
-                        </ul>
-                    </nav>
+                <div class="header_logotext"> <!-- logo texte -->
+                    <h1>LuDon89</h1>
                 </div>
+            </div>
+            <div> <!-- nav -->
+                <nav>
+                    <ul class="container">
+                        <li class="navbar_li">À propos de moi</li>
+                        <li class="navbar_li">Mes Projets</li>
+                        <li class="navbar_li">Mes Compétences</li>
+                        <li class="navbar_li">Me Contacter</li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
@@ -42,17 +44,17 @@
     <main>
         <section> <!-- à propos -->
             <div class="container about_container">
-                <div class="about_presentation">
+                <div class="about_col">
                     <h2 class="about_name">Lucas Daudon</h2>
                     <h3 class="about_profession">Développeur web</h3>
                 </div>
-                <!-- <div class="about_cont_picture"> -->
-                <img src="assets/img/ihavenoideawhatimdoing.jpg" class="about_picture">
-                <!-- </div> -->
+                <div class="about_col">
+                    <img src="assets/img/ihavenoideawhatimdoing.jpg" class="img_responsive">
+                </div>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem explicabo, dicta placeat quaerat earum quasi molestiae voluptatum, exercitationem eveniet qui omnis, porro ducimus aut modi illum inventore in sapiente natus!</p>
+            <p class="about_presentation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem explicabo, dicta placeat quaerat earum quasi molestiae voluptatum, exercitationem eveniet qui omnis, porro ducimus aut modi illum inventore in sapiente natus!</p>
         </section>
-        <hr>
+        <hr class="hr_body">
         <section> <!-- mes compétences -->
             <h2 class="skills_h2">Mes Compétences</h2>
             <h3 class="skills_h3">En cours d'acquisition :</h3>
@@ -64,60 +66,61 @@
                     <li><i class="fa-brands fa-bootstrap"></i></li>
                 </ul>
             </div>
-            <h3>À venir :</h3>
+            <h3 class="skills_h3">À venir :</h3>
             <div> <!-- icônes à venir -->
                 <ul class="container skills_icons">
                     <li><i class="fa-brands fa-php"></i></li>
                     <li><i class="fa-brands fa-react"></i></li>
                     <li><i class="fa-brands fa-laravel"></i></li>
+                    <li><img src="assets/img/sql2.svg" class="sql"></li>
                 </ul>
             </div>
         </section>
-        <hr>
+        <hr class="hr_body">
         <section> <!-- mes projets -->
             <h2 class="proj_h2">Mes Projets</h2>
             <div class="container proj_container"> <!-- projet 1 -->
-                <div class="proj_illus1"> <!-- illu projet 1 -->
-                    <img src="assets/img/hackerman.jpg" class="proj_img1">
+                <div class="proj_col"> <!-- illu projet 1 -->
+                    <img src="assets/img/hackerman.jpg" class="img_responsive">
                 </div>
-                <div> <!-- desc projet 1 -->
+                <div class="proj_col"> <!-- desc projet 1 -->
                     <h3>Projet 1</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, quas ex. Soluta consectetur accusantium excepturi distinctio vero sit perferendis vel voluptatibus? Officia vitae facilis laborum tenetur corrupti iusto, earum necessitatibus?</p>
                 </div>
             </div>
             <div class="container proj_container"> <!-- projet 2 -->
-                <div class="proj_illus2"> <!-- illu projet 2 -->
-                    <img src="assets/img/hackerman_cat.jpg" class="proj_img2">
+                <div class="proj_col"> <!-- illu projet 2 -->
+                    <img src="assets/img/hackerman.jpg" class="img_responsive">
                 </div>
-                <div> <!-- desc projet 2 -->
+                <div class="proj_col"> <!-- desc projet 2 -->
                     <h3>Projet 2</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, quas ex. Soluta consectetur accusantium excepturi distinctio vero sit perferendis vel voluptatibus? Officia vitae facilis laborum tenetur corrupti iusto, earum necessitatibus?</p>
                 </div>
             </div>
-            <h2>More coming soon...</h2>
+            <h3 class="proj_comingsoon">More coming soon...</h3>
 		</section>
-        <hr>
+        <hr class="hr_body">
         <section> <!-- me contacter -->
 			<h2 class="contact_h2">Me contacter</h2>
-			<div class="container container_contact"> <!-- container -->
-                <div class="contact_message"> <!-- contact form -->
-                    <p>Si mon travail vous plaît, je serais ravi de discuter avec vous !</p>
+			<div class="container contact_container"> <!-- container -->
+                <div class="container contact_col"> <!-- contact text/form -->
+                    <p class="contact_text">Si mon travail vous plaît, je serais ravi de discuter avec vous !</p>
                 </div>
-				<div class="contact_socials"> <!-- réseaux -->
-					<ul>
-                        <li><i class="fa-solid fa-envelope"></i> Mail bidon</li>
-						<li><i class="fa-brands fa-linkedin"></i></li>
-						<li><i class="fa-brands fa-github"></i></li>
-					</ul>
+				<div class="container contact_col"> <!-- réseaux -->
+                    <ul class="contact_ul">
+                        <li><i class="fa-solid fa-envelope"></i><span> example@example.com</span></li>
+                        <li><i class="fa-brands fa-linkedin"></i></li>
+                        <li><i class="fa-brands fa-github"></i></li>
+                    </ul>
 				</div>
 			</div>
 		</section>
     </main>
-    <hr>
+    <hr class="hr_body">
     <footer>
         <!-- copyright/mentions légales -->
-        <div class="container_p">
-            <p class="footer_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum praesentium, mollitia eum dolore quae ad et minus reiciendis, quia fuga in laudantium, unde aliquid provident omnis quas sapiente quidem sequi!</p>
+        <div class="footer_container">
+            <p class="footer_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum praesentium, mollitia eum dolore quae ad et minus reiciendis, quia fuga in laudantium, unde aliquid provident omnis quas sapiente quidem sequi!</p>
         </div>
     </footer>
 
