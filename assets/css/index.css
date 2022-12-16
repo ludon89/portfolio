@@ -35,21 +35,21 @@ ul {
 /* ===================================A PROPOS=================================== */
 
 .about_container {
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
-.about_presentation {
+/* .about_presentation {
     max-width: 100%;
-}
+} */
 
-.about_cont_picture {
+/* .about_cont_picture {
     max-width: 100%;
-}
+} */
 
-.about_picture {
-    width: 100%;
-}
+/* .about_picture {
+    max-width: 100%;
+} */
 
 .about_name {
     font-size: 2.2em;
