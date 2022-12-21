@@ -31,16 +31,16 @@
             <div> <!-- nav -->
                 <nav>
                     <ul class="container">
-                        <li class="navbar_li">À propos de moi</li>
-                        <li class="navbar_li">Mes Projets</li>
-                        <li class="navbar_li">Mes Compétences</li>
-                        <li class="navbar_li">Me Contacter</li>
+                        <li class="navbar_li"><a href="#about">À propos de moi</a></li>
+                        <li class="navbar_li"><a href="#skills">Mes Compétences</a></li>
+                        <li class="navbar_li"><a href="#projects">Mes Projets</a></li>
+                        <li class="navbar_li"><a href="#contact">Me Contacter</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
+        <hr>
     </header>
-    <hr>
     <main>
         <section> <!-- à propos -->
             <div class="container about_container about_container_responsive">
@@ -49,36 +49,36 @@
                     <h3 class="about_profession">Développeur web</h3>
                 </div>
                 <div class="about_col">
-                    <img src="assets/img/ihavenoideawhatimdoing.jpg" class="img_responsive">
+                    <a id="about"><img src="assets/img/ihavenoideawhatimdoing.jpg" class="img_responsive"></a>
                 </div>
             </div>
-            <p class="about_presentation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem explicabo, dicta placeat quaerat earum quasi molestiae voluptatum, exercitationem eveniet qui omnis, porro ducimus aut modi illum inventore in sapiente natus!</p>
+            <p class="about_presentation about_presentation_resp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem explicabo, dicta placeat quaerat earum quasi molestiae voluptatum, exercitationem eveniet qui omnis, porro ducimus aut modi illum inventore in sapiente natus!</p>
         </section>
         <hr class="hr_body">
         <section> <!-- mes compétences -->
-            <h2 class="skills_h2">Mes Compétences</h2>
+            <a id="skills"><h2 class="skills_h2">Mes Compétences</h2></a>
             <h3 class="skills_h3">En cours d'acquisition :</h3>
             <div> <!-- icônes en cours d'acq -->
-                <ul class="skills_gridcontainer skills_gridcontainer_resp skills_icons_size">
-                    <li skills_icons><i class="fa-brands fa-html5"></i></li>
-                    <li skills_icons><i class="fa-brands fa-css3-alt"></i></li>
-                    <li skills_icons><i class="fa-brands fa-square-js"></i></p>
-                    <li skills_icons><i class="fa-brands fa-bootstrap"></i></li>
+                <ul class="skills_gridcontainer skills_gridcontainer_resp skills_icons">
+                    <li skills_icons><i class="fa-brands fa-html5 fa-fw"></i></li>
+                    <li skills_icons><i class="fa-brands fa-css3-alt fa-fw"></i></li>
+                    <li skills_icons><i class="fa-brands fa-square-js fa-fw"></i></p>
+                    <li skills_icons><i class="fa-brands fa-bootstrap fa-fw"></i></li>
                 </ul>
             </div>
             <h3 class="skills_h3">À venir :</h3>
             <div> <!-- icônes à venir -->
-                <ul class="container skills_icons skills_icons_size">
-                    <li><i class="fa-brands fa-php"></i></li>
-                    <li><i class="fa-brands fa-react"></i></li>
-                    <li><i class="fa-brands fa-laravel"></i></li>
+                <ul class="skills_gridcontainer skills_gridcontainer_resp skills_icons">
+                    <li><i class="fa-brands fa-php fa-fw"></i></li>
+                    <li><i class="fa-brands fa-react fa-fw"></i></li>
+                    <li><i class="fa-brands fa-laravel fa-fw"></i></li>
                     <li><img src="assets/img/sql2.svg" class="sql"></li>
                 </ul>
             </div>
         </section>
         <hr class="hr_body">
         <section> <!-- mes projets -->
-            <h2 class="proj_h2">Mes Projets</h2>
+            <a id="projects"><h2 class="proj_h2">Mes Projets</h2></a>
             <div class="container proj_container proj_container_responsive"> <!-- projet 1 -->
                 <div class="proj_col"> <!-- illu projet 1 -->
                     <img src="assets/img/hackerman.jpg" class="img_responsive">
@@ -101,23 +101,23 @@
 		</section>
         <hr class="hr_body">
         <section> <!-- me contacter -->
-			<h2 class="contact_h2">Me contacter</h2>
+			<a id="contact"><h2 class="contact_h2">Me contacter</h2></a>
 			<div class="container contact_container"> <!-- container -->
-                <div class="container contact_col contact_col_left"> <!-- contact text/form -->
+                <div class="container contact_col_left contact_col_hide"> <!-- contact text/form -->
                     <p class="contact_text">Si mon travail vous plaît, je serais ravi de discuter avec vous&nbsp;!</p>
                 </div>
 				<div class="container contact_col"> <!-- réseaux -->
                     <div class="contact_ul">
                         <div>
-                            <span><i class="fa-solid fa-envelope fontawesome_verticalalign"></i></span>
+                            <span><i class="fa-solid fa-envelope fa-fw fontawesome_verticalalign"></i></span>
                             <span> example@example.com</span>
                         </div>
                         <div>
-                            <span><i class="fa-brands fa-linkedin fontawesome_verticalalign"></i></span>
+                            <span><i class="fa-brands fa-linkedin fa-fw fontawesome_verticalalign"></i></span>
                             <span> adresse LinkedIn</span>
                         </div>
                         <div>
-                            <span><i class="fa-brands fa-github fontawesome_verticalalign"></i></span>
+                            <span><i class="fa-brands fa-github fa-fw fontawesome_verticalalign"></i></span>
                             <span> adresse GitHub</span>
                         </div>
                     </div>
