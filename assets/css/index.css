@@ -1,6 +1,6 @@
 body {
     font-family: "Fira Sans", "Helvetica Neue", Arial, sans-serif;
-    background-color: #1b1a17;
+    background-color: #1d1d1d;
     color: white;
     max-width: 1200px;
     margin-left: auto;
@@ -11,7 +11,7 @@ body {
 header {
     position: sticky;
     top: 0;
-    background: #1B1A17;
+    background: #1d1d1d;
     z-index: 10;
 }
 
