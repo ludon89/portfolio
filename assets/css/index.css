@@ -212,7 +212,7 @@ a:visited {
     .proj_container_responsive {
         flex-direction: column;
         text-align: left;
-        width: 500px;
+        max-width: 500px;
         margin: auto;
         margin-bottom: 3rem;
     }
