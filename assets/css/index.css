@@ -126,13 +126,10 @@ a:visited {
 }
 
 .about_presentation {
-    max-width: 1000px;
     font-size: 1.2rem;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3rem;
-    padding-left: 4%;
-    padding-right: 4%;
 }
 
 @media screen and (max-width: 600px) {
