@@ -155,22 +155,27 @@ a:visited {
 
 .skills_icons {
   margin-right: auto;
-  margin-bottom: 2rem;
   margin-left: auto;
   padding-left: 2%;
   padding-right: 2%;
+  font-size: 5rem;
 }
 
-.skills_icons li i {
-  font-size: 5rem;
+.skills_container {
+  display: flex;
+  justify-content: center;
 }
 
 .skills_gridcontainer {
   display: grid;
   grid-template-columns: 120px 120px 120px 120px;
   grid-template-rows: 120px;
-  max-width: 1000px;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.skills_comingsoon {
+  text-align: center;
+  font-size: x-small;
 }
 
 @media screen and (max-width: 600px) {
@@ -178,12 +183,8 @@ a:visited {
     display: grid;
     grid-template-columns: 120px 120px;
     grid-template-rows: 120px 120px;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
-}
-
-.sql {
-  filter: invert(100%);
 }
 
 /* ===================================PROJETS=================================== */
@@ -290,7 +291,7 @@ a:visited {
 }
 
 .footer_text {
-  font-size: xx-small;
+  font-size: x-small;
   text-align: right;
   max-width: 400px;
   margin: 0;
