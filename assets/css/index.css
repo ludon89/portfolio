@@ -205,11 +205,6 @@ a:visited {
   column-gap: 2rem;
 }
 
-.proj_container:nth-child(even) {
-  flex-direction: row-reverse;
-  text-align: right;
-}
-
 @media screen and (max-width: 768px) {
   .proj_container_responsive {
     flex-direction: column;
@@ -224,6 +219,12 @@ a:visited {
   .proj_col {
     width: 50%;
   }
+
+  .proj_container:nth-child(even) {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+
 }
 
 .proj_comingsoon {
