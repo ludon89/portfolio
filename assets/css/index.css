@@ -205,7 +205,7 @@ a:visited {
   column-gap: 2rem;
 }
 
-.proj_container_rev {
+.proj_container:nth-child(even) {
   flex-direction: row-reverse;
   text-align: right;
 }
