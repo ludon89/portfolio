@@ -49,6 +49,7 @@ a:visited {
   height: 100%;
   max-height: 700px;
   object-fit: scale-down;
+  border-radius: 5px;
 }
 
 .hr_body {
