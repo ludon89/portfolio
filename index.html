@@ -1,188 +1,282 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucas Daudon | Développeur web</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css" />
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lucas Daudon | Développeur web</title>
-  <!--Bootstrap-->
-  <link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css">
-  <!-- FontAwesome -->
-  <link rel="stylesheet" href="assets/css/all.min.css">
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
-        rel="stylesheet">
-  <!-- CSS -->
-  <link rel="stylesheet" href="assets/css/index.css">
-</head>
-
-<body>
-  <header>
-    <div class="container header_container header_container_responsive">
-      <div class="container header_container"> <!-- logos -->
-        <div class="header_logoimage"> <!-- logo image -->
-          <img src="assets/img/logo.jpg" alt="logo ludon89">
+  <body>
+    <header>
+      <div class="container header_container header_container_responsive">
+        <div class="container header_container">
+          <!-- logos -->
+          <div class="header_logoimage">
+            <!-- logo image -->
+            <img src="assets/img/logo.jpg" alt="logo ludon89" />
+          </div>
+          <div class="header_logotext">
+            <!-- logo texte -->
+            <h1>ludon89</h1>
+          </div>
         </div>
-        <div class="header_logotext"> <!-- logo texte -->
-          <h1>ludon89</h1>
+        <div>
+          <!-- nav -->
+          <nav>
+            <ul class="container">
+              <li class="navbar_li"><a href="#about">À propos de moi</a></li>
+              <li class="navbar_li"><a href="#skills">Mes Compétences</a></li>
+              <li class="navbar_li"><a href="#projects">Mes Projets</a></li>
+              <li class="navbar_li"><a href="#contact">Me Contacter</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
-      <div> <!-- nav -->
-        <nav>
-          <ul class="container">
-            <li class="navbar_li"><a href="#about">À propos de moi</a></li>
-            <li class="navbar_li"><a href="#skills">Mes Compétences</a></li>
-            <li class="navbar_li"><a href="#projects">Mes Projets</a></li>
-            <li class="navbar_li"><a href="#contact">Me Contacter</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    <hr>
-  </header>
-  <main>
-    <section> <!-- à propos -->
-      <div class="container about_container about_container_responsive">
-        <div class="about_col">
-          <h2 class="about_name">Lucas Daudon</h2>
-          <h3 class="about_profession">Développeur web junior</h3>
+      <hr />
+    </header>
+    <main>
+      <section>
+        <!-- à propos -->
+        <div class="container about_container about_container_responsive">
+          <div class="about_col">
+            <h2 class="about_name">Lucas Daudon</h2>
+            <h3 class="about_profession">Développeur web junior</h3>
+          </div>
+          <div class="about_col">
+            <a id="about">
+              <img
+                src="assets/img/selfie_effected.png"
+                alt="photo ludon89"
+                class="img_responsive" />
+            </a>
+          </div>
         </div>
-        <div class="about_col">
-          <a id="about"><img src="assets/img/selfie_effected.png" alt="photo ludon89" class="img_responsive"></a>
+        <p class="about_presentation about_presentation_resp">
+          <strong>Bienvenue sur mon portfolio&nbsp;!</strong><br />
+          Après de nombreuses heures passées sur la toile, je me suis enfin
+          décidé à découvrir les coulisses et le fonctionnement de ce web que
+          j'utilise tous les jours. Originellement formé au métier de traducteur
+          technique, j'ai intégré en 2022 une formation dispensée par
+          <a href="https://simplon.co/">Simplon</a> pour me reconvertir dans le
+          développement web. J'ai validé ma formation par l'obtention du
+          <a href="https://www.francecompetences.fr/recherche/rncp/31114/"
+            >titre professionnel de développeur web et web mobile</a
+          >
+          en septembre 2023.
+        </p>
+      </section>
+      <hr class="hr_body" />
+      <section>
+        <!-- mes compétences -->
+        <a id="skills">
+          <h2 class="skills_h2">Mes Compétences</h2>
+        </a>
+        <div class="skills_gridcontainer skills_gridcontainer_resp">
+          <div title="HTML" class="skills_icons">
+            <i class="fa-brands fa-html5 fa-fw"></i>
+          </div>
+          <div title="CSS" class="skills_icons">
+            <i class="fa-brands fa-css3-alt fa-fw"></i>
+          </div>
+          <div title="JavaScript" class="skills_icons">
+            <i class="fa-brands fa-square-js fa-fw"></i>
+          </div>
+          <div title="PHP" class="skills_icons">
+            <i class="fa-brands fa-php fa-fw"></i>
+          </div>
+          <div title="SQL" class="skills_icons">
+            <i class="fa-solid fa-database fa-fw"></i>
+          </div>
+          <div title="Bootstrap" class="skills_icons">
+            <i class="fa-brands fa-bootstrap fa-fw"></i>
+          </div>
+          <div title="Laravel" class="skills_icons">
+            <i class="fa-brands fa-laravel fa-fw"></i>
+          </div>
+          <div title="React" class="skills_icons">
+            <i class="fa-brands fa-react fa-fw"></i>
+          </div>
         </div>
-      </div>
-      <p class="about_presentation about_presentation_resp">
-        <strong>Bienvenue sur mon portfolio&nbsp;!</strong><br>
-        Après de nombreuses heures passées sur la toile, je me suis enfin décidé à découvrir les coulisses et le
-        fonctionnement de ce web que j'utilise tous les jours. Originellement formé au métier de traducteur
-        technique, je suis donc actuellement en formation chez <a href="https://simplon.co/">Simplon</a> pour me
-        reconvertir dans le développement web. M'étant découvert une passion pour l'informatique, je souhaite poursuivre
-        mon chemin et intégrer une formation de concepteur développeur d'applications en alternance, toujours chez
-        Simplon.
-      </p>
-    </section>
-    <hr class="hr_body">
-    <section> <!-- mes compétences -->
-      <a id="skills">
-        <h2 class="skills_h2">Mes Compétences</h2>
-      </a>
-      <div class="skills_gridcontainer skills_gridcontainer_resp">
-        <div title="HTML" class="skills_icons">
-          <i class="fa-brands fa-html5 fa-fw"></i>
+      </section>
+      <hr class="hr_body" />
+      <section>
+        <!-- mes projets -->
+        <a id="projects">
+          <h2 class="proj_h2">Mes Projets</h2>
+        </a>
+        <div class="container proj_container proj_container_responsive">
+          <!-- projet 1 -->
+          <div class="proj_col">
+            <!-- illu projet 1 -->
+            <img
+              src="assets/img/project-meteoeil.png"
+              alt="Capture d'écran de la page d'accueil de Météœil, projet réalisé pour l'obtention de mon titre professionnel"
+              class="img_responsive" />
+          </div>
+          <div class="proj_col">
+            <!-- desc projet 1 -->
+            <h3>Projet de fin d'étude : Météœil</h3>
+            <p>
+              Réalisation d'un site permettant de poster des observations et des
+              photos de météo. Projet présenté devant un jury pour l'obtention
+              de mon titre professionnel de développeur web en septembre 2023.
+            </p>
+          </div>
         </div>
-        <div title="CSS" class="skills_icons">
-          <i class="fa-brands fa-css3-alt fa-fw"></i>
+        <div class="container proj_container proj_container_responsive">
+          <!-- projet 2 -->
+          <div class="proj_col">
+            <!-- illu projet 2 -->
+            <img
+              src="assets/img/project-github.png"
+              alt="Projet portfolio"
+              class="img_responsive" />
+          </div>
+          <div class="proj_col">
+            <!-- desc projet 2 -->
+            <h3>Réalisation et publication d'un portfolio</h3>
+            <p>
+              Réalisation de mon portfolio personnel de développeur web.
+              Versioning à l'aide de Git et GitHub, et publication sur GitHub
+              Pages.
+            </p>
+          </div>
         </div>
-        <div title="JavaScript" class="skills_icons">
-          <i class="fa-brands fa-square-js fa-fw"></i>
+        <div class="container proj_container proj_container_responsive">
+          <!-- projet 3 -->
+          <div class="proj_col">
+            <!-- illu projet 3 -->
+            <a
+              href="https://ludon89.github.io/generateur-de-citations/"
+              target="_blank"
+              ><img
+                src="assets/img/project-citations.png"
+                alt="Projet citations"
+                class="img_responsive"
+            /></a>
+          </div>
+          <div class="proj_col">
+            <!-- desc projet 3 -->
+            <h3>
+              <a
+                href="https://ludon89.github.io/generateur-de-citations/"
+                target="_blank"
+                >Générateur de citations aléatoires</a
+              >
+            </h3>
+            <p>
+              Réalisation d'un générateur de citations aléatoires en JavaScript.
+            </p>
+          </div>
         </div>
-        <div title="PHP" class="skills_icons">
-          <i class="fa-brands fa-php fa-fw"></i>
+        <div class="container proj_container proj_container_responsive">
+          <!-- projet 4 -->
+          <div class="proj_col">
+            <!-- illu projet 4 -->
+            <a
+              href="https://ludon89.github.io/restos-crous-api/"
+              target="_blank"
+              ><img
+                src="assets/img/project-cartecrous.png"
+                alt="Projet carte CROUS Lille"
+                class="img_responsive"
+            /></a>
+          </div>
+          <div class="proj_col">
+            <!-- desc projet 4 -->
+            <h3>
+              <a
+                href="https://ludon89.github.io/restos-crous-api/"
+                target="_blank"
+                >Carte des restaurants CROUS de Lille</a
+              >
+            </h3>
+            <p>
+              Utilisation de diverses API pour réaliser une carte des
+              restaurants universitaires de la métropole de Lille.
+            </p>
+          </div>
         </div>
-        <div title="SQL" class="skills_icons">
-          <i class="fa-solid fa-database fa-fw"></i>
-        </div>
-        <div title="Bootstrap" class="skills_icons">
-          <i class="fa-brands fa-bootstrap fa-fw"></i>
-        </div>
-        <div title="Laravel" class="skills_icons">
-          <i class="fa-brands fa-laravel fa-fw"></i>
-        </div>
-        <div title="React" class="skills_icons">
-          <i class="fa-brands fa-react fa-fw"></i>
-        </div>
-      </div>
-    </section>
-    <hr class="hr_body">
-    <section> <!-- mes projets -->
-      <a id="projects">
-        <h2 class="proj_h2">Mes Projets</h2>
-      </a>
-      <div class="container proj_container proj_container_responsive"> <!-- projet 1 -->
-        <div class="proj_col"> <!-- illu projet 1 -->
-          <img src="assets/img/project-figma.png" alt="Projet maquettage sur Figma" class="img_responsive">
-        </div>
-        <div class="proj_col"> <!-- desc projet 1 -->
-          <h3>Maquettage sur Figma</h3>
-          <p>Utilisation de Figma pour réaliser la maquette du portfolio que vous êtes en train de consulter
-            en ce moment même. Gestion du responsive pour l'affichage sur mobile et tablette.</p>
-        </div>
-      </div>
-      <div class="container proj_container proj_container_responsive"> <!-- projet 2 -->
-        <div class="proj_col"> <!-- illu projet 2 -->
-          <img src="assets/img/project-github.png" alt="Projet portfolio" class="img_responsive">
-        </div>
-        <div class="proj_col"> <!-- desc projet 2 -->
-          <h3>Réalisation et publication d'un portfolio</h3>
-          <p>Réalisation de mon portfolio personnel de développeur web. Versioning à l'aide de Git et GitHub,
-            et publication sur GitHub Pages.</p>
-        </div>
-      </div>
-      <div class="container proj_container proj_container_responsive"> <!-- projet 3 -->
-        <div class="proj_col"> <!-- illu projet 3 -->
-          <a href="https://ludon89.github.io/generateur-de-citations/" target="_blank"><img
-                 src="assets/img/project-citations.png" alt="Projet citations" class="img_responsive"></a>
-        </div>
-        <div class="proj_col"> <!-- desc projet 3 -->
-          <h3><a href="https://ludon89.github.io/generateur-de-citations/" target="_blank">Générateur de citations
-              aléatoires</a></h3>
-          <p>Réalisation d'un générateur de citations aléatoires en JavaScript.</p>
-        </div>
-      </div>
-      <div class="container proj_container proj_container_responsive"> <!-- projet 4 -->
-        <div class="proj_col"> <!-- illu projet 4 -->
-          <a href="https://ludon89.github.io/restos-crous-api/" target="_blank"><img
-                 src="assets/img/project-cartecrous.png" alt="Projet carte CROUS Lille" class="img_responsive"></a>
-        </div>
-        <div class="proj_col"> <!-- desc projet 4 -->
-          <h3><a href="https://ludon89.github.io/restos-crous-api/" target="_blank">Carte des restaurants CROUS de
-              Lille</a></h3>
-          <p>Utilisation de diverses API pour réaliser une carte des restaurants universitaires de la métropole de
-            Lille.</p>
-        </div>
-      </div>
-      <h3 class="proj_comingsoon">More coming soon...</h3>
-    </section>
-    <hr class="hr_body">
-    <section> <!-- me contacter -->
-      <a id="contact">
-        <h2 class="contact_h2">Me contacter</h2>
-      </a>
-      <div class="container contact_container"> <!-- container -->
-        <div class="container contact_col_left contact_col_hide"> <!-- contact text/form -->
-          <p class="contact_text">Si mon travail vous plaît, je serais ravi de discuter avec vous&nbsp;!</p>
-        </div>
-        <div class="container contact_col"> <!-- réseaux -->
-          <div class="contact_ul">
-            <div>
-              <span><a href="https://www.linkedin.com/in/ludon89/" target="_blank"><i
-                     class="fa-brands fa-linkedin fa-fw fontawesome_verticalalign"></i></a></span>
-              <span> <a href="https://www.linkedin.com/in/ludon89/" target="_blank">LinkedIn</a></span>
-            </div>
-            <div>
-              <span><a href="https://github.com/ludon89" target="_blank"><i
-                     class="fa-brands fa-github fa-fw fontawesome_verticalalign"></i></a></span>
-              <span> <a href="https://github.com/ludon89" target="_blank">GitHub</a></span>
+        <h3 class="proj_comingsoon">More coming soon...</h3>
+      </section>
+      <hr class="hr_body" />
+      <section>
+        <!-- me contacter -->
+        <a id="contact">
+          <h2 class="contact_h2">Me contacter</h2>
+        </a>
+        <div class="container contact_container">
+          <!-- container -->
+          <div class="container contact_col_left contact_col_hide">
+            <!-- contact text/form -->
+            <p class="contact_text">
+              Si mon travail vous plaît, je serais ravi de discuter avec
+              vous&nbsp;!
+            </p>
+          </div>
+          <div class="container contact_col">
+            <!-- réseaux -->
+            <div class="contact_ul">
+              <div>
+                <span
+                  ><a
+                    href="https://www.linkedin.com/in/ludon89/"
+                    target="_blank"
+                    ><i
+                      class="fa-brands fa-linkedin fa-fw fontawesome_verticalalign"></i></a
+                ></span>
+                <span>
+                  <a href="https://www.linkedin.com/in/ludon89/" target="_blank"
+                    >LinkedIn</a
+                  ></span
+                >
+              </div>
+              <div>
+                <span
+                  ><a href="https://github.com/ludon89" target="_blank"
+                    ><i
+                      class="fa-brands fa-github fa-fw fontawesome_verticalalign"></i></a
+                ></span>
+                <span>
+                  <a href="https://github.com/ludon89" target="_blank"
+                    >GitHub</a
+                  ></span
+                >
+              </div>
             </div>
           </div>
         </div>
+      </section>
+    </main>
+    <hr class="hr_body" />
+    <footer>
+      <!-- copyright/mentions légales -->
+      <div class="footer_container">
+        <p class="footer_text">
+          “Sunrise on Mount Shasta” by Michael Zanger is licensed under
+          <a
+            href="https://creativecommons.org/licenses/by-sa/2.0/deed.en"
+            target="_blank"
+            >CC BY-ND 2.0</a
+          >
+        </p>
       </div>
-    </section>
-  </main>
-  <hr class="hr_body">
-  <footer>
-    <!-- copyright/mentions légales -->
-    <div class="footer_container">
-      <p class="footer_text">“Sunrise on Mount Shasta” by Michael Zanger is licensed under <a
-           href="https://creativecommons.org/licenses/by-sa/2.0/deed.en" target="_blank">CC BY-ND 2.0</a></p>
-    </div>
-  </footer>
+    </footer>
 
-  <!--script Bootstrap-->
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-</body>
-
+    <!--script Bootstrap-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
