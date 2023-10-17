@@ -5,7 +5,8 @@ body {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 header {
@@ -225,7 +226,6 @@ a:visited {
     flex-direction: row-reverse;
     text-align: right;
   }
-
 }
 
 .proj_comingsoon {
