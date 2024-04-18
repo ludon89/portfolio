@@ -41,6 +41,10 @@ a:visited {
   color: inherit;
 }
 
+a[id] {
+  text-decoration: none;
+}
+
 .container {
   display: flex;
 }

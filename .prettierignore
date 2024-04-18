@@ -1,0 +1,6 @@
+# Ignore specific files
+modern-normalize.css
+
+# Ignore all minified files
+*.min.js
+*.min.css
