@@ -78,6 +78,11 @@ a[id] {
   }
 }
 
+.header_logoimage {
+  width: 100px;
+  height: 100px;
+}
+
 .header_logotext {
   margin: 0.5rem;
 }
