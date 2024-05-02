@@ -5,8 +5,6 @@ body {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 header {
@@ -14,6 +12,11 @@ header {
   top: 0;
   background: #333;
   z-index: 10;
+  padding: 0.5rem 1rem 0 1rem;
+}
+
+main {
+  padding: 0 1rem;
 }
 
 h3 {
@@ -41,8 +44,9 @@ a:visited {
   color: inherit;
 }
 
-section > a:hover {
-  text-decoration: none;
+/* Décalage de la cible du scroll vers les ancres pour prendre en compte le header */
+.anchor {
+  scroll-margin-top: 120px;
 }
 
 .container {
