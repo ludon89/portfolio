@@ -226,30 +226,25 @@ a:visited {
   font-size: 5rem;
 }
 
-.skills_container {
-  display: flex;
-  justify-content: center;
-}
-
 .skills_gridcontainer {
   display: grid;
   grid-template-columns: 120px 120px 120px 120px;
-  grid-template-rows: 120px;
+  /* grid-template-rows: 120px; */
   justify-content: space-around;
-}
-
-.skills_comingsoon {
-  text-align: center;
-  font-size: x-small;
 }
 
 @media screen and (max-width: 600px) {
   .skills_gridcontainer_resp {
     display: grid;
     grid-template-columns: 120px 120px;
-    grid-template-rows: 120px 120px;
+    /* grid-template-rows: 120px 120px; */
     justify-content: space-around;
   }
+}
+
+.skills_comingsoon {
+  text-align: center;
+  font-size: x-small;
 }
 
 /* ===================================PROJETS=================================== */
