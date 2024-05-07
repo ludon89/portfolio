@@ -231,14 +231,23 @@ a:visited {
 
 .skills_gridcontainer {
   display: grid;
-  max-width: 800px;
   margin: auto;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 20px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (640px < width < 1024px) {
   .skills_gridcontainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .skills_gridcontainer > :nth-last-child(2) {
+    grid-column-start: 2;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .skills_gridcontainer {
+    max-width: 425px;
     grid-template-columns: repeat(2, 1fr);
   }
 }
